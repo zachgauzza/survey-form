@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./survey.css">
+</head>
+
+<body>
+    <h1 id="title">General Survey Form</h1>
+    <p id="description">
+        This is my very first survey form.
+    </p>
+    <div id="container">
+        <form id="survey-form">
+            <label id="name-label">Name</label><input type="text" class="form-control" id="name" name="name"
+                placeholder="Enter your name" required>
+            <label id="email-label">Email</label><input type="email" id="email" class="form-control" name="email"
+                required placeholder="Enter your email">
+            <label id="number-label">Age (optional)</label><input type="number" id="number" class="form-control"
+                name="age" min="10" max="99" placeholder="Enter your age">
+            <p>What best describes your current mood? </p><select type="dropdown" class="form-control" id="dropdown">
+                <option disabled selected value>Select current mood</option>
+                <option>Happy</option>
+                <option>Sad</option>
+                <option>Angry</option>
+                <option>Depressed</option>
+            </select>
+            <p>Marvel or DC Comics? </p><label><input type="radio" class="input-radio" value="marvel"
+                    name="comics">Marvel</label><label><input type="radio" class="input-radio" value="dc"
+                    name="comics">DC</label>
+            <p>If you had $1,000,000 - What would you do? </p><label><input type="checkbox" class="input-checkbox"
+                    value="what-if">Save
+                it</label>
+            <label><input type="checkbox" class="input-checkbox" value="what-if">Spend it</label>
+            <label><input type="checkbox" class="input-checkbox" value="what-if">Donate it</label>
+            <p>Any comments or suggestions?</p><textarea class="input-textarea"></textarea><br>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
